@@ -75,7 +75,7 @@ async function run() {
 
     // user related api 
     app.get('/user',async(req,res)=>{
-      const cursor = coffeeCollection.find()
+      const cursor = userCollection.find()
       const result = await cursor.toArray()
       res.send(result)
     })
